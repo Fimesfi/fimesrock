@@ -1,0 +1,81 @@
+{
+  "name": "fimesfi/fimesrock",
+  "type": "project",
+  "license": "MIT",
+  "description": "Custom WordPress boilerplate and deployment system for Fimes web development agencies.",
+  "homepage": "https://github.com/fimesfi/fimesrock",
+  "authors": [
+    {
+      "name": "Eeli Gren",
+      "email": "eeli.gren@fimes.fi",
+      "homepage": "https://github.com/eeligren"
+    }
+  ],
+  "keywords": [
+    "bedrock", "composer", "roots", "wordpress", "wp", "wp-config", "fimes", "finland"
+  ],
+  "support": {
+    "issues": "https://github.com/fimesfi/fimesrock/issues"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org",
+      "only": ["wpackagist-plugin/*", "wpackagist-theme/*"]
+    },
+    {
+        "type": "vcs",
+        "url": "https://github.com/fimesfi/wp-template"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/devgeniem/wp-sanitize-accented-uploads"
+  }
+  ],
+  "require": {
+    "php": ">=8.0",
+    "composer/installers": "^2.2",
+    "vlucas/phpdotenv": "^5.5",
+    "oscarotero/env": "^2.1",
+    "roots/bedrock-autoloader": "^1.0",
+    "roots/bedrock-disallow-indexing": "^2.0",
+    "roots/wordpress": "6.3.1",
+    "roots/wp-config": "1.0.0",
+    "roots/wp-password-bcrypt": "1.1.0",
+    "fimesfi/wp-template": "*",
+    "wpackagist-plugin/cookiebot": "*",
+    "wpackagist-plugin/so-clean-up-wp-seo": "*",
+    "wpackagist-plugin/koko-analytics": "*",
+    "wpackagist-plugin/worker": "*",
+    "wpackagist-plugin/disable-media-pages": "*",
+    "wpackagist-plugin/wordpress-seo": "*",
+    "devgeniem/wp-sanitize-accented-uploads": "*"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.7.1",
+    "roave/security-advisories": "dev-latest"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "allow-plugins": {
+      "composer/installers": true,
+      "roots/wordpress-core-installer": true
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "extra": {
+    "installer-paths": {
+      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+      "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
+      "web/app/themes/{$name}/": ["type:wordpress-theme"]
+    },
+    "wordpress-install-dir": "web/wp"
+  },
+  "scripts": {
+    "test": [
+      "phpcs"
+    ]
+  }
+}
