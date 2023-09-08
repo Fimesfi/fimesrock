@@ -15,7 +15,8 @@ web/.htaccess
 # Logs
 *.log
 
-.vscode
+# Vscode
+/.vscode
 
 # Dotenv
 .env
