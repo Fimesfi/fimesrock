@@ -42,7 +42,7 @@
     "roots/wordpress": "6.3.1",
     "roots/wp-config": "1.0.0",
     "roots/wp-password-bcrypt": "1.1.0",
-    "fimesfi/wp-template": "*",
+    "fimesfi/fimestheme": "*",
     "wpackagist-plugin/so-clean-up-wp-seo": "*",
     "wpackagist-plugin/koko-analytics": "*",
     "wpackagist-plugin/worker": "*",
