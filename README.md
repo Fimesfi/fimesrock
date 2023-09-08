@@ -4,3 +4,5 @@ Finnish Fimes web development agencies thing to create new Wordpress projects.
 
 Uses [Bedrock by Roots](https://roots.io/bedrock/) and [Capistrano](https://github.com/capistrano/capistrano).
 
+
+Capistrano: 3.17.3
