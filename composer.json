@@ -30,7 +30,11 @@
     {
       "type": "vcs",
       "url": "https://github.com/devgeniem/wp-sanitize-accented-uploads"
-  }
+    },
+    {
+        "type":"composer",
+        "url":"https://connect.advancedcustomfields.com"
+    }
   ],
   "require": {
     "php": ">=8.0",
@@ -48,7 +52,8 @@
     "wpackagist-plugin/worker": "*",
     "wpackagist-plugin/disable-media-pages": "*",
     "wpackagist-plugin/wordpress-seo": "*",
-    "devgeniem/wp-sanitize-accented-uploads": "*"
+    "devgeniem/wp-sanitize-accented-uploads": "*",
+    "wpengine/advanced-custom-fields-pro": "*"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.7.1",
@@ -66,7 +71,7 @@
   "prefer-stable": true,
   "extra": {
     "installer-paths": {
-      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin", "wpengine/advanced-custom-fields-pro"],
       "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
       "web/app/themes/{$name}/": ["type:wordpress-theme"]
     },
