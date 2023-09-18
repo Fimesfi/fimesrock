@@ -52,8 +52,11 @@
     "wpackagist-plugin/worker": "*",
     "wpackagist-plugin/disable-media-pages": "*",
     "wpackagist-plugin/wordpress-seo": "*",
+    "wpackagist-plugin/svg-support": "*",
     "devgeniem/wp-sanitize-accented-uploads": "*",
-    "wpengine/advanced-custom-fields-pro": "*"
+    "wpengine/advanced-custom-fields-pro": "*",
+    "wpackagist-plugin/automatic-domain-changer": "^2.0",
+    "wpackagist-plugin/w3-total-cache": "^2.4"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.7.1",
