@@ -43,7 +43,7 @@
     "oscarotero/env": "^2.1",
     "roots/bedrock-autoloader": "^1.0",
     "roots/bedrock-disallow-indexing": "^2.0",
-    "roots/wordpress": "6.3.1",
+    "roots/wordpress": "6.3.2",
     "roots/wp-config": "1.0.0",
     "roots/wp-password-bcrypt": "1.1.0",
     "fimesfi/fimestheme": "*",
@@ -56,7 +56,8 @@
     "devgeniem/wp-sanitize-accented-uploads": "*",
     "wpengine/advanced-custom-fields-pro": "*",
     "wpackagist-plugin/automatic-domain-changer": "^2.0",
-    "wpackagist-plugin/w3-total-cache": "^2.4"
+    "wpackagist-plugin/w3-total-cache": "^2.4",
+    "wpackagist-plugin/better-search-replace": "^1.4"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.7.1",
